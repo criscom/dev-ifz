@@ -1,0 +1,33 @@
+/* CSS code for panel page two cols two rows
+** PANEL page
+** Two column criscom
+** added by criscom
+** /front
+**
+*/
+
+.view-frontpage-news {
+    .views-row {
+        clear: both;
+        @extend %divider-node;
+        .glyphicon {
+            color: $brand-primary;
+        }
+        .glyphicon-menu-right {
+            content:"\e258";
+        }
+    }
+    .field-name-title {
+        h2 {
+            margin: 12px 0;
+            margin: .75rem 0;
+        }
+    }
+    .field-name-field-image {
+        float: left;
+        width: 25%;
+        img {
+            @include border-radius(4px);
+        }
+    }
+}
