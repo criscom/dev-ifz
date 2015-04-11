@@ -491,7 +491,7 @@
 }
 /* line 112, ../sass/bootstrap/_buttons.scss */
 .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
-  color: #777777;
+  color: #f3f3f3;
   text-decoration: none;
 }
 
@@ -1347,17 +1347,19 @@ th {
   /* line 60, ../sass/layouts/_responsive.scss */
   .main {
     /* Move all the children of .main down to make room. */
-    padding-top: 3em;
+    padding-top: 108px;
     position: relative;
   }
 
-  /* line 65, ../sass/layouts/_responsive.scss */
+  /* line 66, ../sass/layouts/_responsive.scss */
   .main-navigation {
     /* Move the navbar up inside .main's padding. */
     position: absolute;
-    top: 0;
+    top: 16px;
+    top: 1rem;
     height: 3em;
     width: 100%;
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 /**
@@ -1367,12 +1369,12 @@ th {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 86, ../sass/layouts/_responsive.scss */
+  /* line 90, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 88, ../sass/layouts/_responsive.scss */
+  /* line 92, ../sass/layouts/_responsive.scss */
   .sidebar-first .main-content {
     float: left;
     width: 66.66667%;
@@ -1380,7 +1382,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 93, ../sass/layouts/_responsive.scss */
+  /* line 97, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -1392,24 +1394,24 @@ th {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 101, ../sass/layouts/_responsive.scss */
+  /* line 106, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 103, ../sass/layouts/_responsive.scss */
+  /* line 108, ../sass/layouts/_responsive.scss */
   .sidebar-second .main-content {
     float: left;
-    width: 66.66667%;
+    width: 33.33333%;
     margin-left: 0%;
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 108, ../sass/layouts/_responsive.scss */
+  /* line 113, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
-    width: 33.33333%;
-    margin-left: 66.66667%;
+    width: 16.66667%;
+    margin-left: 33.33333%;
     margin-right: -100%;
     *margin-right: -99.9%;
   }
@@ -1417,32 +1419,32 @@ th {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 116, ../sass/layouts/_responsive.scss */
+  /* line 121, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 118, ../sass/layouts/_responsive.scss */
+  /* line 123, ../sass/layouts/_responsive.scss */
   .two-sidebars .main-content {
     float: left;
-    width: 66.66667%;
-    margin-left: 33.33333%;
-    margin-right: -100%;
-    *margin-right: -99.9%;
-  }
-  /* line 123, ../sass/layouts/_responsive.scss */
-  .two-sidebars .region-sidebar-first {
-    float: left;
     width: 33.33333%;
-    margin-left: 0%;
+    margin-left: 16.66667%;
     margin-right: -100%;
     *margin-right: -99.9%;
   }
   /* line 128, ../sass/layouts/_responsive.scss */
+  .two-sidebars .region-sidebar-first {
+    float: left;
+    width: 16.66667%;
+    margin-left: 0%;
+    margin-right: -100%;
+    *margin-right: -99.9%;
+  }
+  /* line 133, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
-    width: 100%;
+    width: 50%;
     margin-left: 0%;
     margin-right: -100%;
     *margin-right: -99.9%;
@@ -1465,7 +1467,7 @@ th {
   .two-sidebars .region-sidebar-second:after {
     clear: both;
   }
-  /* line 134, ../sass/layouts/_responsive.scss */
+  /* line 139, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -1475,28 +1477,28 @@ th {
     box-sizing: border-box;
     *word-wrap: break-word;
   }
-  /* line 138, ../sass/layouts/_responsive.scss */
+  /* line 143, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
-    width: 33.33333%;
+    width: 16.66667%;
     margin-left: 0%;
     margin-right: -100%;
     *margin-right: -99.9%;
     clear: left;
   }
-  /* line 143, ../sass/layouts/_responsive.scss */
+  /* line 148, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
-    width: 33.33333%;
-    margin-left: 33.33333%;
+    width: 16.66667%;
+    margin-left: 16.66667%;
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 147, ../sass/layouts/_responsive.scss */
+  /* line 152, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
-    width: 33.33333%;
-    margin-left: 66.66667%;
+    width: 16.66667%;
+    margin-left: 33.33333%;
     margin-right: -100%;
     *margin-right: -99.9%;
   }
@@ -1508,23 +1510,23 @@ th {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 164, ../sass/layouts/_responsive.scss */
+  /* line 169, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 166, ../sass/layouts/_responsive.scss */
+  /* line 171, ../sass/layouts/_responsive.scss */
   .sidebar-first .main-content {
     float: left;
-    width: 80%;
-    margin-left: 20%;
+    width: 57.14286%;
+    margin-left: 28.57143%;
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 171, ../sass/layouts/_responsive.scss */
+  /* line 176, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
-    width: 20%;
+    width: 28.57143%;
     margin-left: 0%;
     margin-right: -100%;
     *margin-right: -99.9%;
@@ -1533,24 +1535,24 @@ th {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 179, ../sass/layouts/_responsive.scss */
+  /* line 185, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 181, ../sass/layouts/_responsive.scss */
+  /* line 187, ../sass/layouts/_responsive.scss */
   .sidebar-second .main-content {
     float: left;
-    width: 80%;
+    width: 57.14286%;
     margin-left: 0%;
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 186, ../sass/layouts/_responsive.scss */
+  /* line 192, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
-    width: 20%;
-    margin-left: 80%;
+    width: 28.57143%;
+    margin-left: 57.14286%;
     margin-right: -100%;
     *margin-right: -99.9%;
   }
@@ -1558,35 +1560,44 @@ th {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 194, ../sass/layouts/_responsive.scss */
+  /* line 200, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 196, ../sass/layouts/_responsive.scss */
+  /* line 202, ../sass/layouts/_responsive.scss */
   .two-sidebars .main-content {
     float: left;
-    width: 60%;
-    margin-left: 20%;
+    width: 42.85714%;
+    margin-left: 14.28571%;
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 201, ../sass/layouts/_responsive.scss */
+  /* line 207, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
-    width: 20%;
+    width: 14.28571%;
     margin-left: 0%;
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 206, ../sass/layouts/_responsive.scss */
+  /* line 212, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
-    width: 20%;
-    margin-left: 80%;
+    width: 14.28571%;
+    margin-left: 57.14286%;
     margin-right: -100%;
     *margin-right: -99.9%;
+  }
+}
+/** Extend spacing between left sidebar and main content
+**/
+@media (min-width: 769px) {
+  /* line 222, ../sass/layouts/_responsive.scss */
+  .region-sidebar-first {
+    padding-right: 48px;
+    padding-right: 3rem;
   }
 }
 /* Component (SMACSS module) rules */
@@ -3186,23 +3197,29 @@ html[xmlns] .slides {
 */
 /* line 6, ../sass/library/_placeholders.scss */
 body, [role='main'] p,
-[role='main'] ul li, div.download-file a, ul.language-switcher-locale-url li a, ul.nice-menu li a {
+[role='main'] ul li,
+[role='main'] div, div.download-file a, ul.language-switcher-locale-url li a, ul.nice-menu li a {
   font-size: 18px;
   font-size: 1.125rem;
 }
 
 /* line 12, ../sass/library/_placeholders.scss */
 body, [role='main'] p,
-[role='main'] ul li, .inline-link, div.download-file a, div p a,
+[role='main'] ul li,
+[role='main'] div, .inline-link, div.download-file a, div p a,
 .wohnungsdetails-link a,
 li a,
 .link a,
-.field-slideshow-caption-text a, h1, .webform-component label {
+.more-link a,
+.field-slideshow-caption-text a,
+.node a,
+span a, .block-link, .sidebar li a,
+.sidebar span a, h1, .webform-component label {
   font-weight: 300;
 }
 
 /* line 16, ../sass/library/_placeholders.scss */
-ul.language-switcher-locale-url li a, ul.nice-menu li a {
+.header__site-link span, ul.language-switcher-locale-url li a, ul.nice-menu li a {
   font-weight: 500;
 }
 
@@ -3225,14 +3242,14 @@ ul.language-switcher-locale-url li a, ul.nice-menu li a {
 }
 
 /* line 39, ../sass/library/_placeholders.scss */
-.view-frontpage-news .views-row, .center-wrapper.two .node, .field-name-field-object-reference {
+.view-frontpage-news .views-row, .center-wrapper.two .node, .main-content .view-publikationen .views-row, .main-content .view-team .views-row, .field-name-field-object-reference {
   padding-bottom: 16px;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 /* line 45, ../sass/library/_placeholders.scss */
-.view-frontpage-news .views-row, .center-wrapper.two .node {
+.view-frontpage-news .views-row, .center-wrapper.two .node, .main-content .view-publikationen .views-row, .main-content .view-team .views-row {
   margin-bottom: 32px;
   margin-bottom: 2rem;
 }
@@ -3244,6 +3261,72 @@ ul.language-switcher-locale-url li a, ul.nice-menu li a {
 }
 
 /* Adding sl-components folder with sass-globbing */
+/* line 1, ../sass/sl-components/_boxes.scss */
+.box, #block-block-3,
+#block-views-team-block-2,
+#block-views-team-block-3,
+#block-views-publikationen-block-1 {
+  background-color: #e5e5e5;
+  border: 1px solid #d1d1d1;
+  text-shadow: #f9f9f9 0 1px 0;
+  padding: 35px 24px 27px 24px;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+}
+
+/* line 15, ../sass/sl-components/_boxes.scss */
+#block-block-3 h2,
+#block-views-team-block-2 h2,
+#block-views-team-block-3 h2,
+#block-views-publikationen-block-1 h2 {
+  word-break: break-all;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+/* line 17, ../sass/sl-components/_boxes.scss */
+#block-block-3 h2 span,
+#block-views-team-block-2 h2 span,
+#block-views-team-block-3 h2 span,
+#block-views-publikationen-block-1 h2 span {
+  margin-right: 8px;
+  margin-right: .5rem;
+}
+/* line 22, ../sass/sl-components/_boxes.scss */
+#block-block-3 p,
+#block-views-team-block-2 p,
+#block-views-team-block-3 p,
+#block-views-publikationen-block-1 p {
+  margin-top: 0;
+}
+
+/* line 28, ../sass/sl-components/_boxes.scss */
+#block-views-publikationen-block-1 ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 11, ../sass/library/_lists.scss */
+#block-views-publikationen-block-1 ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 31, ../sass/sl-components/_boxes.scss */
+#block-views-publikationen-block-1 ul li {
+  background-image: url('../images/glyphicons-199-ok.png?1415042226');
+  background-size: 13px 13px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  padding-left: 24px;
+  padding-left: 1.5rem;
+  color: #595959;
+}
+
 /* CSS code for breadcrumb navigation
 ** added by criscom
 ** on all pages except the frontpage
@@ -3285,8 +3368,33 @@ ul.language-switcher-locale-url li a, ul.nice-menu li a {
 ** added by criscom
 */
 /* line 6, ../sass/sl-components/_default.scss */
+body {
+  color: #595959;
+  background: #f3f3f3;
+}
+
+/* line 13, ../sass/sl-components/_default.scss */
 .main h1 {
   text-transform: uppercase;
+}
+
+/* line 17, ../sass/sl-components/_default.scss */
+h1, h2, h3 {
+  color: #1a1a1a;
+  text-shadow: rgba(255, 255, 255, 0.6), 0 1px 0;
+}
+
+/* line 23, ../sass/sl-components/_default.scss */
+.main-content h1,
+.view-mode-full .field-name-title-field h1 {
+  margin-top: 33px;
+  margin-top: 2.0625rem;
+}
+
+/* line 30, ../sass/sl-components/_default.scss */
+.view-mode-full .field-name-title h2 {
+  margin-top: 36px;
+  margin-top: 2.25rem;
 }
 
 /* CSS code for the fonts integration
@@ -3295,13 +3403,24 @@ ul.language-switcher-locale-url li a, ul.nice-menu li a {
 1. 
 
 */
-/* line 34, ../sass/sl-components/_fonts.scss */
+/* line 13, ../sass/sl-components/_fonts.scss */
+[role='main'] p,
+[role='main'] ul li,
+[role='main'] div {
+  color: #595959;
+  text-shadow: rgba(255, 255, 255, 0.6), 0 1px 0;
+}
+
+/* line 32, ../sass/sl-components/_fonts.scss */
 .inline-link, div.download-file a, div p a,
 .wohnungsdetails-link a,
 li a,
 .link a,
-.field-slideshow-caption-text a {
-  color: #231f20;
+.more-link a,
+.field-slideshow-caption-text a,
+.node a,
+span a {
+  color: #fab907;
   text-decoration: underline;
 }
 /* line 13, ../sass/library/_link.scss */
@@ -3309,36 +3428,76 @@ li a,
 .wohnungsdetails-link a:hover,
 li a:hover,
 .link a:hover,
-.field-slideshow-caption-text a:hover {
-  color: #428bca;
+.more-link a:hover,
+.field-slideshow-caption-text a:hover,
+.node a:hover,
+span a:hover {
+  color: #fab907;
 }
 /* line 14, ../sass/library/_link.scss */
 .inline-link:visited, div.download-file a:visited, div p a:visited,
 .wohnungsdetails-link a:visited,
 li a:visited,
 .link a:visited,
-.field-slideshow-caption-text a:visited {
-  color: #3e3739;
+.more-link a:visited,
+.field-slideshow-caption-text a:visited,
+.node a:visited,
+span a:visited {
+  color: #fbc739;
 }
 /* line 15, ../sass/library/_link.scss */
 .inline-link:active, div.download-file a:active, div p a:active,
 .wohnungsdetails-link a:active,
 li a:active,
 .link a:active,
-.field-slideshow-caption-text a:active {
-  color: #231f20;
+.more-link a:active,
+.field-slideshow-caption-text a:active,
+.node a:active,
+span a:active {
+  color: #fab907;
 }
 
-/* line 48, ../sass/sl-components/_fonts.scss */
+/* line 39, ../sass/sl-components/_fonts.scss */
+.block-link, .sidebar li a,
+.sidebar span a {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+/* line 13, ../sass/library/_link.scss */
+.block-link:hover, .sidebar li a:hover,
+.sidebar span a:hover {
+  color: #fab907;
+}
+/* line 14, ../sass/library/_link.scss */
+.block-link:visited, .sidebar li a:visited,
+.sidebar span a:visited {
+  color: #343434;
+}
+/* line 15, ../sass/library/_link.scss */
+.block-link:active, .sidebar li a:active,
+.sidebar span a:active {
+  color: #1a1a1a;
+}
+
+/* line 55, ../sass/sl-components/_fonts.scss */
 div p a:hover,
 .wohnungsdetails-link a:hover,
 li a:hover,
 .link a:hover,
-.field-slideshow-caption-text a:hover {
+.more-link a:hover,
+.field-slideshow-caption-text a:hover,
+.node a:hover,
+span a:hover {
   text-decoration: none;
 }
 
-/* line 68, ../sass/sl-components/_fonts.scss */
+/* line 64, ../sass/sl-components/_fonts.scss */
+.sidebar li a:hover,
+.sidebar span a:hover {
+  text-decoration: none;
+}
+
+/* line 85, ../sass/sl-components/_fonts.scss */
 .page-panels h1:hover,
 .panel-display .panle-panel h2:hover,
 h1.object-title:hover,
@@ -3388,29 +3547,31 @@ footer a:active {
 .view-frontpage-news .views-row {
   clear: both;
 }
-/* line 13, ../sass/sl-components/_front.scss */
-.view-frontpage-news .views-row .glyphicon {
-  color: #428bca;
-}
-/* line 16, ../sass/sl-components/_front.scss */
-.view-frontpage-news .views-row .glyphicon-menu-right {
-  content: "\e258";
-}
-/* line 21, ../sass/sl-components/_front.scss */
+/* line 15, ../sass/sl-components/_front.scss */
 .view-frontpage-news .field-name-title h2 {
-  margin: 12px 0;
-  margin: .75rem 0;
+  margin: 0 0 12px 0;
+  margin: 0 0 .75rem 0;
 }
-/* line 26, ../sass/sl-components/_front.scss */
+/* line 20, ../sass/sl-components/_front.scss */
 .view-frontpage-news .field-name-field-image {
   float: left;
   width: 25%;
+  margin-right: 16px;
+  margin-right: 1rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
-/* line 29, ../sass/sl-components/_front.scss */
+/* line 10, ../sass/library/_image.scss */
 .view-frontpage-news .field-name-field-image img {
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+}
+/* line 23, ../sass/sl-components/_front.scss */
+.view-frontpage-news .fa-angle-right {
+  color: #fab907;
+  margin-left: 8px;
+  margin-left: .5rem;
 }
 
 /* CSS code for the front page
@@ -3425,25 +3586,64 @@ footer a:active {
 */
 /* line 9, ../sass/sl-components/_header.scss */
 header.header {
-  background-color: #fab907;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
   padding: 8px 0;
 }
+/* line 14, ../sass/sl-components/_header.scss */
+header.header .acronym {
+  color: #fab907;
+  display: none;
+}
 
-/* line 17, ../sass/sl-components/_header.scss */
+/* line 21, ../sass/sl-components/_header.scss */
+.header__logo {
+  padding-left: 10px;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  /* line 21, ../sass/sl-components/_header.scss */
+  .header__logo {
+    display: none;
+  }
+}
+
+/* line 30, ../sass/sl-components/_header.scss */
 .header__site-link:hover {
   text-decoration: none;
-  color: #428bca;
+  color: #fab907;
 }
-/* line 21, ../sass/sl-components/_header.scss */
+/* line 36, ../sass/sl-components/_header.scss */
 .header__site-link span {
-  font-size: 48px;
+  font-size: 32px;
   padding-left: 16px;
   padding-left: 1rem;
 }
+@media (max-width: 659px) {
+  /* line 36, ../sass/sl-components/_header.scss */
+  .header__site-link span {
+    font-size: 25.6px;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  /* line 36, ../sass/sl-components/_header.scss */
+  .header__site-link span {
+    font-size: 20.8px;
+  }
+}
+@media (min-width: 660px) {
+  /* line 36, ../sass/sl-components/_header.scss */
+  .header__site-link span {
+    position: relative;
+    top: 60px;
+    top: 3.75rem;
+  }
+}
 
+@media (min-width: 769px) {
+  /* line 59, ../sass/sl-components/_header.scss */
+  .page {
+    padding-top: 24px;
+    padding-top: 1.5rem;
+  }
+}
 /* CSS code for the language switcher
 ** added by criscom
 ** on all pages
@@ -3498,7 +3698,7 @@ ul.language-switcher-locale-url li a:active {
 @media (max-width: 768px) {
   /* line 35, ../sass/sl-components/_language-switcher.scss */
   .block-locale {
-    background-color: #231f20;
+    background-color: #1a1a1a;
   }
   /* line 42, ../sass/sl-components/_language-switcher.scss */
   .block-locale ul.language-switcher-locale-url {
@@ -3549,25 +3749,24 @@ ul.nice-menu li.last {
 /* line 45, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li a {
   text-decoration: none;
-  text-transform: uppercase;
-  color: #231f20;
+  color: #1a1a1a;
   padding-right: 0 !important;
 }
 /* line 13, ../sass/library/_link.scss */
 ul.nice-menu li a:hover {
-  color: red !important;
+  color: #fab907 !important;
 }
 /* line 14, ../sass/library/_link.scss */
 ul.nice-menu li a:visited {
-  color: #231f20;
+  color: #1a1a1a;
 }
 /* line 15, ../sass/library/_link.scss */
 ul.nice-menu li a:active {
-  color: #231f20;
+  color: #1a1a1a;
 }
 /* line 55, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail a {
-  color: red;
+  color: #fab907;
 }
 
 /* line 63, ../sass/sl-components/_main-menu-desktop.scss */
@@ -3770,6 +3969,23 @@ ul.nice-menu ul li a:active {
 ** /panel-two-two
 */
 /* line 6, ../sass/library/_clearfix.scss */
+.main-content .view-publikationen .views-row:before {
+  content: '';
+  display: table;
+}
+/* line 11, ../sass/library/_clearfix.scss */
+.main-content .view-publikationen .views-row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* CSS code for über uns detail page
+** PANEL page
+** added by criscom
+** /panel-two-two
+*/
+/* line 6, ../sass/library/_clearfix.scss */
 .center-wrapper.one:before {
   content: '';
   display: table;
@@ -3780,56 +3996,102 @@ ul.nice-menu ul li a:active {
   display: table;
   clear: both;
 }
-/* line 10, ../sass/sl-components/_ueber-uns.scss */
+/* line 10, ../sass/sl-components/_team-detail.scss */
 .center-wrapper.one h2 {
   margin-top: 0;
 }
-/* line 13, ../sass/sl-components/_ueber-uns.scss */
+/* line 13, ../sass/sl-components/_team-detail.scss */
 .center-wrapper.one h2:hover {
   color: #428bca;
 }
-/* line 18, ../sass/sl-components/_ueber-uns.scss */
+/* line 18, ../sass/sl-components/_team-detail.scss */
 .center-wrapper.one .panel-panel {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 @media (max-width: 767px) {
-  /* line 18, ../sass/sl-components/_ueber-uns.scss */
+  /* line 18, ../sass/sl-components/_team-detail.scss */
   .center-wrapper.one .panel-panel {
     width: 100%;
     float: none;
   }
 }
-/* line 29, ../sass/sl-components/_ueber-uns.scss */
+/* line 29, ../sass/sl-components/_team-detail.scss */
 .center-wrapper.one .panel-panel .group-left {
   width: 30%;
   margin-right: 2%;
 }
-/* line 34, ../sass/sl-components/_ueber-uns.scss */
+/* line 34, ../sass/sl-components/_team-detail.scss */
 .center-wrapper.one .panel-panel .group-right {
   width: 68%;
 }
 
-/* line 45, ../sass/sl-components/_ueber-uns.scss */
+/* line 45, ../sass/sl-components/_team-detail.scss */
 .center-wrapper.two .panel-col-first {
   width: 68%;
 }
 @media (max-width: 767px) {
-  /* line 45, ../sass/sl-components/_ueber-uns.scss */
+  /* line 45, ../sass/sl-components/_team-detail.scss */
   .center-wrapper.two .panel-col-first {
     width: 100%;
   }
 }
-/* line 55, ../sass/sl-components/_ueber-uns.scss */
+/* line 55, ../sass/sl-components/_team-detail.scss */
 .center-wrapper.two .panel-col-last {
   width: 30%;
   margin-left: 2%;
 }
 @media (max-width: 767px) {
-  /* line 55, ../sass/sl-components/_ueber-uns.scss */
+  /* line 55, ../sass/sl-components/_team-detail.scss */
   .center-wrapper.two .panel-col-last {
     width: 100%;
   }
+}
+
+/* CSS code for über uns detail page
+** PANEL page
+** added by criscom
+** /panel-two-two
+*/
+/* line 7, ../sass/sl-components/_team-landing.scss */
+.main-content .view-team {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+/* line 6, ../sass/library/_clearfix.scss */
+.main-content .view-team .views-row:before {
+  content: '';
+  display: table;
+}
+/* line 11, ../sass/library/_clearfix.scss */
+.main-content .view-team .views-row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 19, ../sass/sl-components/_team-landing.scss */
+.main-content .view-team .field-name-title h2 {
+  margin: 0 0 12px 0;
+  margin: 0 0 .75rem 0;
+}
+/* line 25, ../sass/sl-components/_team-landing.scss */
+.main-content .view-team .field-name-field-image {
+  float: left;
+  width: 25%;
+  margin-right: 16px;
+  margin-right: 1rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+/* line 10, ../sass/library/_image.scss */
+.main-content .view-team .field-name-field-image img {
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+}
+/* line 29, ../sass/sl-components/_team-landing.scss */
+.main-content .view-team .more-link {
+  text-align: left;
 }
 
 /* CSS code for wohnung detail page
@@ -3889,8 +4151,8 @@ h1.object-title {
   margin: 1.5rem 0 1rem;
   padding: 24px 0;
   padding: 1.5rem 0;
-  border-top: 1px solid #777777;
-  border-bottom: 1px solid #777777;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
 }
 /* line 99, ../sass/sl-components/_wohnung.scss */
 .group-wrapper-info .btn.availability,
@@ -4024,7 +4286,7 @@ ul.field-slideshow-pager li {
   font-size: 14px;
   font-size: .875rem;
   font-style: italic;
-  color: #777777;
+  color: #f3f3f3;
 }
 /* line 193, ../sass/sl-components/_wohnung.scss */
 .webform-component input,
@@ -4040,7 +4302,7 @@ ul.field-slideshow-pager li {
   margin-top: 1.5rem;
   padding-top: 16px;
   padding-top: 1rem;
-  border-top: 1px solid #777777;
+  border-top: 1px solid #f3f3f3;
 }
 /* line 212, ../sass/sl-components/_wohnung.scss */
 .node-wohnung .field-name-field-page-reference h2 {

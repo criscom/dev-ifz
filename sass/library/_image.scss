@@ -1,0 +1,14 @@
+@mixin image-float
+{
+    float: left;
+
+    width: 25%;
+    margin-right: 16px;
+    margin-right: 1rem;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    img
+    {
+        @include border-radius(11px);
+    }
+}

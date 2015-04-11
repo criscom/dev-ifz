@@ -120,8 +120,11 @@ $white-space-rem: 1.5rem;
 
 $yellow: rgb(255,255,0);
 $red: rgb(255,0,0);
-$black: #231f20;
-$header-color: #fab907;
+$black: rgb(26,26,26);
+$header-color: #fab907; // orange
+$gray: rgb(89,89,89);
+$gray-light: rgb(243,243,243);
+$gray-border: rgb(217,217,217);
 
 //
 // Breakpoints
@@ -130,6 +133,7 @@ $header-color: #fab907;
 // Standard min
 $mobile: min-width 0px;
 $tablet: min-width 569px;
+$min660: min-width 660px; // for headers
 $desktop: min-width 769px;
 $large: min-width 980px;
 $xlarge: min-width 1200px;
@@ -138,6 +142,7 @@ $xxlarge: min-width 1500px;
 // Helper max
 $max979: max-width 979px; // smallscreens
 $max768: max-width 768px; // mobilescreens
+$max659: max-width 659px; // for header
 $max568: max-width 568px;
 
 // Ranges

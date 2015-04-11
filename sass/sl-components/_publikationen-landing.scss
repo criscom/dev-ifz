@@ -1,0 +1,15 @@
+/* CSS code for über uns detail page
+** PANEL page
+** added by criscom
+** /panel-two-two
+*/
+
+.main-content .view-publikationen
+{
+    .views-row
+    {
+        // clear: both;
+        @include clearfix;
+        @extend %divider-node;
+    }
+}

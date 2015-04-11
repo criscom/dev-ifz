@@ -6,23 +6,58 @@
 */
 
 
-header.header {
-    background-color: $header-color;
-    @include border-radius(4px);
+header.header
+{
+    // background-color: $header-color;
+    // @include border-radius(4px);
     padding: 8px 0;
-
+    .acronym
+    {
+        color: $header-color;
+        display: none;
+    }
 }
 
-.header__site-link {
-    &:hover {
-        text-decoration: none;
-        color: $brand-primary;
+.header__logo {
+    padding-left: 10px;
+    @include breakpoint($range0-480) {
+        display: none;
     }
-    span {
-    // font-family: $opensans;
-    font-size: 1.5 * $h1-font-size;
-    padding-left: 16px;
-    padding-left: 1rem;
+}
 
+.header__site-link
+{
+    &:hover
+    {
+        text-decoration: none;
+
+        color: $header-color;
+    }
+    span
+    {
+        font-size: $h1-font-size;
+        @include breakpoint($max659) {
+            font-size: 0.8 * $h1-font-size;
+        }
+        @include breakpoint($range481-568) {
+            font-size: 0.65 * $h1-font-size;
+        }
+        padding-left: 16px;
+        padding-left: 1rem;
+        // font-family: $opensans;
+
+        @extend %medium-font-weight;
+        @include breakpoint($min660){
+                position: relative;
+                top: 60px;
+                top: 3.75rem;
+            }
+    }
+}
+
+@include breakpoint($desktop) {
+    .page {
+        padding-top: 24px;
+        padding-top: 1.5rem;
     }
 }

@@ -45,16 +45,16 @@ ul.nice-menu li
     a
     {
         text-decoration: none;
-        text-transform: uppercase;
+        // text-transform: uppercase;
 
         @extend %base-font-size;
-        @include link-colors($normal: $black, $hover: $red !important);
+        @include link-colors($normal: $black, $hover: $header-color !important);
         @extend %medium-font-weight;
         padding-right: 0 !important;
     }
     &.active-trail a
     {
-        color: $red;
+        color: $header-color;
     }
 }
 

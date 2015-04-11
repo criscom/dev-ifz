@@ -5,21 +5,19 @@
 
 */
 
-body {
-    @extend %base-font-size;
-    @extend %base-font-weight;
-}
-
 // All paragraphs with the 'p' tag
 // UBUNTU LIGHT 18PT
 // Font weight: 300;
 [role='main']
 {
     p,
-    ul li
+    ul li,
+    div
     {
         @extend %base-font-size;
         @extend %base-font-weight;
+        color: $gray;
+        @include text-shadow(rgba(255, 255, 255, 0.6), 0 1px 0);
     }
 }
 
@@ -33,7 +31,13 @@ div.download-file a
 
 .inline-link
 {
-    @include link-colors($normal: $black, $hover: $brand-primary, $visited: lighten($black, 10%));
+    @include link-colors($normal: $header-color, $hover: $header-color, $visited: lighten($header-color, 10%));
+    text-decoration: underline;
+    @extend %base-font-weight;
+}
+
+.block-link {
+    @include link-colors($normal: $black, $hover: $header-color, $visited: lighten($black, 10%));
     text-decoration: underline;
     @extend %base-font-weight;
 }
@@ -42,11 +46,24 @@ div p a,
 .wohnungsdetails-link a,
 li a,
 .link a,
-.field-slideshow-caption-text a
+.more-link a,
+.field-slideshow-caption-text a,
+.node a,
+span a
 {
     @extend .inline-link;
     &:hover {
         text-decoration: none;
+    }
+}
+
+.sidebar {
+    li a,
+    span a {
+        @extend .block-link;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 

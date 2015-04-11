@@ -1,0 +1,42 @@
+.box {
+    background-color: rgb(229,229,229);
+    border: 1px solid rgb(209,209,209);
+    @include text-shadow(rgb(249,249,249) 0 1px 0);
+    padding: 35px 24px 27px 24px;
+    @include border-radius(11px);
+}
+
+#block-block-3, // Address
+#block-views-team-block-2,  // Wissenschaftliche Mitarbeiter
+#block-views-team-block-3,  // Assistenz
+#block-views-publikationen-block-1 // Publikationen
+{
+    @extend .box;
+    h2 {
+        @include hyphenation;
+        span {        
+            margin-right: 8px;
+            margin-right: .5rem;
+        }    
+    }
+    p {
+        margin-top: 0;
+    }
+}
+
+#block-views-publikationen-block-1 {
+    ul {
+        @include no-bullets; // removing standard bullet list
+        padding-left: 0;
+        li {
+            background-image: image-url('glyphicons-199-ok.png');
+            background-size: 13px 13px;
+            background-position: center left;
+            background-repeat: no-repeat;
+            padding-left: 24px;
+            padding-left: 1.5rem;
+            color: $gray;
+        }
+    }
+
+}

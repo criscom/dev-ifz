@@ -39,7 +39,7 @@
 %divider { // creates a dark gray line to divide sections in a background area
     padding-bottom: 16px;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $gray-border;
 }
 
 %divider-node {
@@ -52,4 +52,3 @@
     margin-bottom: $white-space-px;
     margin-bottom: $white-space-rem;
 }
-

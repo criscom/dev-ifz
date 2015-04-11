@@ -1,0 +1,32 @@
+/* CSS code for über uns detail page
+** PANEL page
+** added by criscom
+** /panel-two-two
+*/
+
+.main-content .view-team
+{
+    margin-top: 16px;
+    margin-top: 1rem;
+    .views-row
+    {
+        // clear: both;
+        @include clearfix;
+        @extend %divider-node;
+    }
+    .field-name-title
+    {
+        h2
+        {
+            margin: 0 0 12px 0;
+            margin: 0 0 .75rem 0;
+        }
+    }
+    .field-name-field-image
+    {
+        @include image-float;
+    }
+    .more-link {
+        text-align: left;
+    }
+}
