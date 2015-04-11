@@ -9,7 +9,8 @@
 #block-block-3, // Address
 #block-views-team-block-2,  // Wissenschaftliche Mitarbeiter
 #block-views-team-block-3,  // Assistenz
-#block-views-publikationen-block-1 // Publikationen
+#block-views-publikationen-block-1, // Publikationen
+#block-menu-block-2 // Menü Forschung
 {
     @extend .box;
     h2 {
@@ -22,21 +23,72 @@
     p {
         margin-top: 0;
     }
+    li.collapsed {
+        height: 32px;
+        height: 2rem;
+    }
+    a.active {
+        color: $header-color;
+        span.glyphicon {
+            color: $header-color !important;
+        }
+    }
 }
 
-#block-views-publikationen-block-1 {
+#block-views-publikationen-block-1,
+#block-menu-block-2 {
     ul {
         @include no-bullets; // removing standard bullet list
         padding-left: 0;
         li {
-            background-image: image-url('glyphicons-199-ok.png');
-            background-size: 13px 13px;
-            background-position: center left;
-            background-repeat: no-repeat;
-            padding-left: 24px;
-            padding-left: 1.5rem;
-            color: $gray;
+            // background-image: image-url('glyphicons-199-ok.png');
+            // background-size: 13px 13px;
+            // background-position: center left;
+            // background-repeat: no-repeat;
+            // padding-left: 24px;
+            // padding-left: 1.5rem;
+            // color: $gray;
         }
     }
+}
 
+.sidebar {
+    #block-views-publikationen-block-1 .view,
+    #block-menu-block-2 ul.menu li a, // Menu Forschung in sidebar
+    .view-team {
+        span.glyphicon {
+                color: $gray;
+                padding-right: 16px;
+                padding-right: 1rem;
+                font-size: 14px;
+                font-size: .875rem;
+                &:hover {
+                    color: $header-color;
+                }
+        }
+    }
+}
+
+// Adjust line height
+
+.sidebar {
+    .view-team .views-field, // Team 
+    .view-publikationen ul li, // Publikationen
+    #block-menu-block-2 ul.menu li // Forschung Menu
+    {
+    line-height: 32px;
+    }
+}
+
+// Menu Forschung Submenus
+
+#block-menu-block-2 ul.menu li.expanded {
+    ul.menu {
+        padding-bottom: 24px;
+        padding-bottom: 1.5rem;
+        li {
+            padding-left: 28px;
+            padding-left: 1.75rem;
+        }
+    }
 }

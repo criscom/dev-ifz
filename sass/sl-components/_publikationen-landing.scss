@@ -13,3 +13,13 @@
         @extend %divider-node;
     }
 }
+
+// Pager
+
+.pager li>a {
+    background-color: transparent;
+    border: 0;
+    &:hover, &:focus {
+        background-color: transparent;
+    }
+}

@@ -10,23 +10,17 @@
 // wrapping it with an "anonymous closure". See:
 // - https://drupal.org/node/1446420
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
+
 (function ($) {
+  $(document).ready(function() { 
+    // add glyphicon ok icon in front of publication list in box
+    $('#block-views-publikationen-block-1 .view ul li a').prepend('<span class="glyphicon glyphicon-ok"></span>');
+    
+    // add glyphicon user icon in front of team member list in box
+    $('.sidebar .view-team .views-row span.field-content a').prepend('<span class="glyphicon glyphicon-user"></span>');
 
-/* START: SMARTMENUS */
-    (function($) {
-    // initialise smartmenus for main menu
-    // $('#main-menu').smartmenus();
-    })(jQuery);
-/* END: SMARTMENUS */
+        // add glyphicon ok icon in front of Forschung menu list in box
+    $('#block-menu-block-2 ul.menu li a').prepend('<span class="glyphicon glyphicon-ok"></span>');
 
-// To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
-  attach: function(context, settings) {
-
-    // Place your code here.
-
-  }
-};
-
-
+    });
 })(jQuery);

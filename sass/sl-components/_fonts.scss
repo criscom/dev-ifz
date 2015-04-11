@@ -54,6 +54,9 @@ span a
     @extend .inline-link;
     &:hover {
         text-decoration: none;
+        span.glyphicon {
+            color: $header-color !important;
+        }
     }
 }
 

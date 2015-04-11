@@ -161,7 +161,7 @@ $zen-auto-include-grid-item-base: false;
  */
 @media all and (min-width: 960px) {
 
-  $zen-columns: 7 !global;
+  $zen-columns: 6 !global;
 
   /**
    * The layout when there is only one sidebar, the left one.
@@ -220,7 +220,11 @@ $zen-auto-include-grid-item-base: false;
 
 @include breakpoint($desktop) {
   .region-sidebar-first {
-    padding-right: 48px;
-    padding-right: 3rem;
+    padding-right: 40px;
+    padding-right: 2.5rem;
+  }
+  .sidebar-first .main-content {
+    padding-left: 12px;
+    padding-left: .75rem;
   }
 }
