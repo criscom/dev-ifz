@@ -22,5 +22,7 @@
         // add glyphicon ok icon in front of Forschung menu list in box
     $('#block-menu-block-2 ul.menu li a').prepend('<span class="glyphicon glyphicon-ok"></span>');
 
+    // add glyphicon download icon for download files
+    $('ul.download-file a').prepend('<span class="glyphicon glyphicon-cloud-download"></span>');
     });
 })(jQuery);

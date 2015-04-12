@@ -52,7 +52,10 @@ ul.nice-menu li
         @extend %medium-font-weight;
         padding-right: 0 !important;
     }
-    &.active-trail a
+}
+
+.block-nice-menus>ul.nice-menu>li {
+        >&.active-trail a
     {
         color: $header-color;
     }
