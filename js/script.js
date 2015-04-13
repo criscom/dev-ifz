@@ -20,7 +20,13 @@
     $('.sidebar .view-team .views-row span.field-content a').prepend('<span class="glyphicon glyphicon-user"></span>');
 
         // add glyphicon ok icon in front of Forschung menu list in box
-    $('#block-menu-block-2 ul.menu li a').prepend('<span class="glyphicon glyphicon-ok"></span>');
+    // $('#block-menu-block-2 ul.menu li a').prepend('<span class="glyphicon glyphicon-ok"></span>');
+
+     // add glyphicon ok icon in front of Forschung menu list in box
+    // $('#block-menu-block-3 ul.menu li a').prepend('<span class="glyphicon glyphicon-ok"></span>');
+
+        $('div[id^="block-menu-block-"] ul.menu li a').prepend('<span class="glyphicon glyphicon-ok"></span>');
+
 
     // add glyphicon download icon for download files
     $('ul.download-file a').prepend('<span class="glyphicon glyphicon-cloud-download"></span>');

@@ -17,12 +17,8 @@
 
 // Style nice menus
 
-ul.nice-menu
-{
-    // margin-top: 50px;
-}
 
-ul.nice-menu li
+.block-nice-menus>ul.nice-menu>li
 {
     border: 0;
     background-color: transparent;
@@ -42,7 +38,7 @@ ul.nice-menu li
     {
         padding-right: 0;
     }
-    a
+    >a
     {
         text-decoration: none;
         // text-transform: uppercase;
@@ -54,12 +50,14 @@ ul.nice-menu li
     }
 }
 
-.block-nice-menus>ul.nice-menu>li {
-        >&.active-trail a
-    {
+// Sets the main menu item active when a submenu is active
+.block-nice-menus>ul.nice-menu
+{
+    >li.active-trail>a {
         color: $header-color;
     }
 }
+
 
 ul.nice-menu-down
 {
@@ -73,19 +71,29 @@ ul.nice-menu-down
 
 // secondary menus 
 
-ul.nice-menu ul
+ul.nice-menu li.menuparent ul
 {
     // top: 2.2em;
-
-    border-top: 0;
-    background-color: white;
+    border: 0;
+    padding: 8px;
+    padding: .5rem;
+    background-color: rgb(229,229,229);
+    border: 1px solid rgb(209,209,209);
+    @include border-radius(11px);
     li
     {
+        border: 0;
+        background-color: rgb(229,229,229);
+
         a
         {
             text-decoration: none;
-
-            @include link-colors($normal: black, $hover: $red, $visited: black, $active: $red);
+            @include link-colors($normal: black, $hover: $header-color !important);
+        }
+    }
+    li.active-trail {
+        a {
+            color: $header-color;
         }
     }
 }
