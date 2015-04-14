@@ -11,7 +11,8 @@
 #block-views-team-block-3,  // Assistenz
 #block-views-publikationen-block-1, // Publikationen
 #block-menu-block-2, // Menü Forschung
-#block-menu-block-3 // Menü Vorträge und Papers
+#block-menu-block-3, // Menü Vorträge und Papers
+#block-views-news-block-block // News Menu 
 {
     @extend .box;
     h2 {
@@ -38,7 +39,11 @@
 
 #block-views-publikationen-block-1,
 #block-menu-block-2,
-#block-menu-block-3 {
+#block-menu-block-3,
+#block-views-team-block-2,
+#block-views-team-block-3,
+#block-views-news-block-block // News Menu 
+{
     ul {
         @include no-bullets; // removing standard bullet list
         padding-left: 0;
@@ -57,7 +62,8 @@
 .sidebar {
     #block-views-publikationen-block-1 .view,
     #block-menu-block-2 ul.menu li a, // Menu Forschung in sidebar
-    #block-menu-block-3 ul.menu li a,
+    #block-menu-block-3 ul.menu li a, // Menu Vorträge und Papers
+    #block-views-news-block-block .view, // News Menu
     .view-team {
         span.glyphicon {
                 color: $gray;
@@ -78,7 +84,8 @@
     .view-team .views-field, // Team 
     .view-publikationen ul li, // Publikationen
     #block-menu-block-2 ul.menu li, // Forschung Menu
-    #block-menu-block-3 ul.menu li
+    #block-menu-block-3 ul.menu li,
+    #block-views-news-block-block // News Menu
     {
     line-height: 32px;
     }

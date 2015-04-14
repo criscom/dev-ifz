@@ -17,7 +17,10 @@
     $('#block-views-publikationen-block-1 .view ul li a').prepend('<span class="glyphicon glyphicon-ok"></span>');
     
     // add glyphicon user icon in front of team member list in box
-    $('.sidebar .view-team .views-row span.field-content a').prepend('<span class="glyphicon glyphicon-user"></span>');
+    $('.sidebar .view-team .views-row span.field-content a').prepend('<span class="glyphicon glyphicon-ok"></span>');
+
+    // add glyphicon user icon in front of team member list in box
+    $('#block-views-news-block-block .views-row span.field-content a').prepend('<span class="glyphicon glyphicon-ok"></span>');
 
         // add glyphicon ok icon in front of Forschung menu list in box
     // $('#block-menu-block-2 ul.menu li a').prepend('<span class="glyphicon glyphicon-ok"></span>');

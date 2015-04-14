@@ -1,0 +1,30 @@
+/* CSS code for über uns detail page
+** PANEL page
+** added by criscom
+** /panel-two-two
+*/
+
+h3 {
+        margin-top: 32px;
+        margin-top: 2rem;
+    }
+
+.main-content .view-electronic-working-papers
+{
+    .views-row
+    {
+        // clear: both;
+        @include clearfix;
+        @extend %divider-node;
+    }
+}
+
+// Pager
+
+.pager li>a {
+    background-color: transparent;
+    border: 0;
+    &:hover, &:focus {
+        background-color: transparent;
+    }
+}
