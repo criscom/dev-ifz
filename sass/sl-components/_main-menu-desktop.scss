@@ -54,7 +54,7 @@
 .block-nice-menus>ul.nice-menu
 {
     >li.active-trail>a {
-        color: $header-color;
+        color: $header-color !important;
     }
 }
 

@@ -3422,6 +3422,11 @@ span a, .block-link, .sidebar li a,
   color: #fab907;
 }
 
+/* line 112, ../sass/sl-components/_boxes.scss */
+#block-menu-block-2 ul.menu > li.is-expanded > ul.menu > li.active-trail > a {
+  color: #fab907 !important;
+}
+
 /* CSS code for breadcrumb navigation
 ** added by criscom
 ** on all pages except the frontpage
@@ -3945,7 +3950,7 @@ header.header .acronym {
 
 /* line 56, ../sass/sl-components/_main-menu-desktop.scss */
 .block-nice-menus > ul.nice-menu > li.active-trail > a {
-  color: #fab907;
+  color: #fab907 !important;
 }
 
 /* line 64, ../sass/sl-components/_main-menu-desktop.scss */

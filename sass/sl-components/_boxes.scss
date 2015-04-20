@@ -106,3 +106,9 @@
         }
     }
 }
+
+// Sets the sub menu item active when an article of the 3rd order is shown
+
+#block-menu-block-2 ul.menu>li.is-expanded>ul.menu>li.active-trail>a {
+    color: $header-color !important;
+}
