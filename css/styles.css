@@ -3285,7 +3285,14 @@ span a, .block-link, .sidebar li a,
   border-radius: 11px;
 }
 
-/* line 18, ../sass/sl-components/_boxes.scss */
+/* line 11, ../sass/sl-components/_boxes.scss */
+.halflings-user,
+.halflings-star {
+  line-height: 40px;
+  line-height: 2.5rem !important;
+}
+
+/* line 28, ../sass/sl-components/_boxes.scss */
 #block-block-3 h2,
 #block-views-team-block-2 h2,
 #block-views-team-block-3 h2,
@@ -3302,7 +3309,7 @@ span a, .block-link, .sidebar li a,
   -o-hyphens: auto;
   hyphens: auto;
 }
-/* line 20, ../sass/sl-components/_boxes.scss */
+/* line 30, ../sass/sl-components/_boxes.scss */
 #block-block-3 h2 span,
 #block-views-team-block-2 h2 span,
 #block-views-team-block-3 h2 span,
@@ -3313,7 +3320,7 @@ span a, .block-link, .sidebar li a,
   margin-right: 8px;
   margin-right: .5rem;
 }
-/* line 25, ../sass/sl-components/_boxes.scss */
+/* line 35, ../sass/sl-components/_boxes.scss */
 #block-block-3 p,
 #block-views-team-block-2 p,
 #block-views-team-block-3 p,
@@ -3323,7 +3330,7 @@ span a, .block-link, .sidebar li a,
 #block-views-news-block-block p {
   margin-top: 0;
 }
-/* line 28, ../sass/sl-components/_boxes.scss */
+/* line 38, ../sass/sl-components/_boxes.scss */
 #block-block-3 li.collapsed,
 #block-views-team-block-2 li.collapsed,
 #block-views-team-block-3 li.collapsed,
@@ -3334,7 +3341,7 @@ span a, .block-link, .sidebar li a,
   height: 32px;
   height: 2rem;
 }
-/* line 32, ../sass/sl-components/_boxes.scss */
+/* line 42, ../sass/sl-components/_boxes.scss */
 #block-block-3 a.active,
 #block-views-team-block-2 a.active,
 #block-views-team-block-3 a.active,
@@ -3344,7 +3351,7 @@ span a, .block-link, .sidebar li a,
 #block-views-news-block-block a.active {
   color: #fab907;
 }
-/* line 34, ../sass/sl-components/_boxes.scss */
+/* line 44, ../sass/sl-components/_boxes.scss */
 #block-block-3 a.active span.glyphicon,
 #block-views-team-block-2 a.active span.glyphicon,
 #block-views-team-block-3 a.active span.glyphicon,
@@ -3355,7 +3362,7 @@ span a, .block-link, .sidebar li a,
   color: #fab907 !important;
 }
 
-/* line 47, ../sass/sl-components/_boxes.scss */
+/* line 57, ../sass/sl-components/_boxes.scss */
 #block-views-publikationen-block-1 ul,
 #block-menu-block-2 ul,
 #block-menu-block-3 ul,
@@ -3377,7 +3384,7 @@ span a, .block-link, .sidebar li a,
   margin-left: 0;
 }
 
-/* line 68, ../sass/sl-components/_boxes.scss */
+/* line 78, ../sass/sl-components/_boxes.scss */
 .sidebar #block-views-publikationen-block-1 .view span.glyphicon,
 .sidebar #block-menu-block-2 ul.menu li a span.glyphicon,
 .sidebar #block-menu-block-3 ul.menu li a span.glyphicon,
@@ -3389,7 +3396,7 @@ span a, .block-link, .sidebar li a,
   font-size: 14px;
   font-size: .875rem;
 }
-/* line 74, ../sass/sl-components/_boxes.scss */
+/* line 84, ../sass/sl-components/_boxes.scss */
 .sidebar #block-views-publikationen-block-1 .view span.glyphicon:hover,
 .sidebar #block-menu-block-2 ul.menu li a span.glyphicon:hover,
 .sidebar #block-menu-block-3 ul.menu li a span.glyphicon:hover,
@@ -3398,7 +3405,7 @@ span a, .block-link, .sidebar li a,
   color: #fab907;
 }
 
-/* line 84, ../sass/sl-components/_boxes.scss */
+/* line 94, ../sass/sl-components/_boxes.scss */
 .sidebar .view-team .views-field,
 .sidebar .view-publikationen ul li,
 .sidebar #block-menu-block-2 ul.menu li,
@@ -3407,22 +3414,22 @@ span a, .block-link, .sidebar li a,
   line-height: 32px;
 }
 
-/* line 97, ../sass/sl-components/_boxes.scss */
+/* line 107, ../sass/sl-components/_boxes.scss */
 #block-menu-block-2 ul.menu li.expanded ul.menu {
   padding-bottom: 24px;
   padding-bottom: 1.5rem;
 }
-/* line 100, ../sass/sl-components/_boxes.scss */
+/* line 110, ../sass/sl-components/_boxes.scss */
 #block-menu-block-2 ul.menu li.expanded ul.menu li {
   padding-left: 28px;
   padding-left: 1.75rem;
 }
-/* line 103, ../sass/sl-components/_boxes.scss */
+/* line 113, ../sass/sl-components/_boxes.scss */
 #block-menu-block-2 ul.menu li.expanded ul.menu li.is-active-trail a.active {
   color: #fab907;
 }
 
-/* line 112, ../sass/sl-components/_boxes.scss */
+/* line 122, ../sass/sl-components/_boxes.scss */
 #block-menu-block-2 ul.menu > li.is-expanded > ul.menu > li.active-trail > a {
   color: #fab907 !important;
 }
@@ -3495,6 +3502,25 @@ h1, h2, h3 {
 .view-mode-full .field-name-title h2 {
   margin-top: 36px;
   margin-top: 2.25rem;
+}
+
+/* line 35, ../sass/sl-components/_default.scss */
+ul.download-file {
+  clear: left;
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+}
+/* line 11, ../sass/library/_lists.scss */
+ul.download-file li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 43, ../sass/sl-components/_default.scss */
+ul.download-file span.glyphicon {
+  padding-right: 6px;
+  padding-right: .375rem;
 }
 
 /* CSS code for über uns detail page
@@ -3738,24 +3764,6 @@ footer a:active {
 /* line 47, ../sass/sl-components/_forschungsgebiete-detail.scss */
 .node-projekte.view-mode-full .hyperlink.wrapper a:nth-last-child(n+2):after {
   content: ',';
-}
-/* line 53, ../sass/sl-components/_forschungsgebiete-detail.scss */
-.node-projekte.view-mode-full ul.download-file {
-  clear: left;
-  margin-top: 0;
-  padding-left: 0;
-  list-style: none;
-}
-/* line 11, ../sass/library/_lists.scss */
-.node-projekte.view-mode-full ul.download-file li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-}
-/* line 61, ../sass/sl-components/_forschungsgebiete-detail.scss */
-.node-projekte.view-mode-full ul.download-file span.glyphicon {
-  padding-right: 6px;
-  padding-right: .375rem;
 }
 
 /* CSS code for team forschungsgebiete landing

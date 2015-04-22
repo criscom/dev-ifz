@@ -6,6 +6,16 @@
     @include border-radius(11px);
 }
 
+// glyphicons
+
+.halflings-user, // team-block-2, team-block-3
+.halflings-star // menu-block--2.php => Forschungsgebiete
+{
+    line-height: 40px;
+    line-height: 2.5rem !important;
+}
+
+
 #block-block-3, // Address
 #block-views-team-block-2,  // Wissenschaftliche Mitarbeiter
 #block-views-team-block-3,  // Assistenz

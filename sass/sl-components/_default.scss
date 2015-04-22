@@ -31,3 +31,18 @@ h1,h2,h3 {
     margin-top: 36px;
     margin-top: 2.25rem;
 }
+
+ul.download-file
+    {
+        clear: left;
+
+        margin-top: 0;
+        padding-left: 0;
+
+        @include no-bullets;
+        span.glyphicon
+        {
+            padding-right: 6px;
+            padding-right: .375rem;
+        }
+    }

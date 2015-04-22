@@ -50,18 +50,4 @@
             }
         }
     }
-    ul.download-file
-    {
-        clear: left;
-
-        margin-top: 0;
-        padding-left: 0;
-
-        @include no-bullets;
-        span.glyphicon
-        {
-            padding-right: 6px;
-            padding-right: .375rem;
-        }
-    }
 }
