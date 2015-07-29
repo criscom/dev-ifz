@@ -3205,11 +3205,11 @@ html[xmlns] .slides {
 body, [role='main'] p,
 [role='main'] ul li,
 [role='main'] div, div.download-file a, .block-nice-menus > ul.nice-menu > li > a {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
-/* line 12, ../sass/library/_placeholders.scss */
+/* line 14, ../sass/library/_placeholders.scss */
 body, [role='main'] p,
 [role='main'] ul li,
 [role='main'] div, .inline-link, div.download-file a, h3 a,
@@ -3225,18 +3225,18 @@ span a, .block-link, .sidebar li a,
   font-weight: 300;
 }
 
-/* line 16, ../sass/library/_placeholders.scss */
+/* line 18, ../sass/library/_placeholders.scss */
 .header__site-link span, .block-nice-menus > ul.nice-menu > li > a {
   font-weight: 500;
 }
 
-/* line 20, ../sass/library/_placeholders.scss */
+/* line 22, ../sass/library/_placeholders.scss */
 .node-wohnung .label-inline,
 .node-wohnung .label-above {
   font-weight: 700;
 }
 
-/* line 24, ../sass/library/_placeholders.scss */
+/* line 26, ../sass/library/_placeholders.scss */
 .panel-2col-stacked .panel-col-top,
 .panel-2col-stacked .center-wrapper .panel-col-first,
 .panel-2col-stacked .center-wrapper .panel-col-last, .center-wrapper.one .panel-panel, .center-wrapper.two .panel-col-first, .center-wrapper.two .panel-col-last, .node-wohnung .group-top,
@@ -3248,20 +3248,20 @@ span a, .block-link, .sidebar li a,
   border-radius: 4px;
 }
 
-/* line 39, ../sass/library/_placeholders.scss */
+/* line 41, ../sass/library/_placeholders.scss */
 .main-content .view-electronic-working-papers .views-row, .view-frontpage-news .views-row, .center-wrapper.two .node, .main-content .view-publikationen .views-row, .main-content .view-team .views-row, .main-content .view-reports .views-row, .field-name-field-object-reference {
   padding-bottom: 16px;
   padding-bottom: 1rem;
   border-bottom: 1px solid #d9d9d9;
 }
 
-/* line 45, ../sass/library/_placeholders.scss */
+/* line 47, ../sass/library/_placeholders.scss */
 .main-content .view-electronic-working-papers .views-row, .view-frontpage-news .views-row, .center-wrapper.two .node, .main-content .view-publikationen .views-row, .main-content .view-team .views-row, .main-content .view-reports .views-row {
   margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
-/* line 51, ../sass/library/_placeholders.scss */
+/* line 53, ../sass/library/_placeholders.scss */
 .panel-2col-stacked .panel-col-top, .center-wrapper.one .panel-panel, .node-wohnung .group-top {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
@@ -3275,7 +3275,7 @@ span a, .block-link, .sidebar li a,
 #block-views-publikationen-block-1,
 #block-menu-block-2,
 #block-menu-block-3,
-#block-views-news-block-block {
+#block-views-news-block-block, header.header {
   background-color: #e5e5e5;
   border: 1px solid #d1d1d1;
   text-shadow: #f9f9f9 0 1px 0;
@@ -3486,25 +3486,31 @@ body {
 }
 
 /* line 17, ../sass/sl-components/_default.scss */
+iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 22, ../sass/sl-components/_default.scss */
 h1, h2, h3 {
   color: #1a1a1a;
   text-shadow: rgba(255, 255, 255, 0.6), 0 1px 0;
 }
 
-/* line 23, ../sass/sl-components/_default.scss */
+/* line 28, ../sass/sl-components/_default.scss */
 .main-content h1,
 .view-mode-full .field-name-title-field h1 {
   margin-top: 33px;
   margin-top: 2.0625rem;
 }
 
-/* line 30, ../sass/sl-components/_default.scss */
+/* line 35, ../sass/sl-components/_default.scss */
 .view-mode-full .field-name-title h2 {
   margin-top: 36px;
   margin-top: 2.25rem;
 }
 
-/* line 35, ../sass/sl-components/_default.scss */
+/* line 40, ../sass/sl-components/_default.scss */
 ul.download-file {
   clear: left;
   margin-top: 0;
@@ -3517,7 +3523,7 @@ ul.download-file li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 43, ../sass/sl-components/_default.scss */
+/* line 48, ../sass/sl-components/_default.scss */
 ul.download-file span.glyphicon {
   padding-right: 6px;
   padding-right: .375rem;
@@ -3784,12 +3790,6 @@ footer a:active {
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-/* line 10, ../sass/library/_image.scss */
-.section-forschung .field-name-field-image img {
-  -moz-border-radius: 11px;
-  -webkit-border-radius: 11px;
-  border-radius: 11px;
-}
 
 /* line 21, ../sass/sl-components/_forschungsgebiete-landing.scss */
 .view-forschungsgebiete h3 {
@@ -3828,12 +3828,6 @@ footer a:active {
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-/* line 10, ../sass/library/_image.scss */
-.view-frontpage-news .field-name-field-image img {
-  -moz-border-radius: 11px;
-  -webkit-border-radius: 11px;
-  border-radius: 11px;
-}
 /* line 23, ../sass/sl-components/_front.scss */
 .view-frontpage-news .fa-angle-right {
   color: #fab907;
@@ -3849,50 +3843,51 @@ footer a:active {
 */
 /* line 9, ../sass/sl-components/_header.scss */
 header.header {
-  padding: 8px 0;
+  padding: 16px 0;
+  padding: 1rem 0;
 }
-/* line 14, ../sass/sl-components/_header.scss */
+/* line 15, ../sass/sl-components/_header.scss */
 header.header .acronym {
   color: #fab907;
   display: none;
 }
 
-/* line 21, ../sass/sl-components/_header.scss */
+/* line 22, ../sass/sl-components/_header.scss */
 .header__logo {
   padding-left: 10px;
 }
 @media (min-width: 0px) and (max-width: 480px) {
-  /* line 21, ../sass/sl-components/_header.scss */
+  /* line 22, ../sass/sl-components/_header.scss */
   .header__logo {
     display: none;
   }
 }
 
-/* line 30, ../sass/sl-components/_header.scss */
+/* line 31, ../sass/sl-components/_header.scss */
 .header__site-link:hover {
   text-decoration: none;
   color: #fab907;
 }
-/* line 36, ../sass/sl-components/_header.scss */
+/* line 37, ../sass/sl-components/_header.scss */
 .header__site-link span {
   font-size: 32px;
   padding-left: 16px;
   padding-left: 1rem;
 }
 @media (max-width: 659px) {
-  /* line 36, ../sass/sl-components/_header.scss */
+  /* line 37, ../sass/sl-components/_header.scss */
   .header__site-link span {
     font-size: 25.6px;
   }
 }
 @media (min-width: 481px) and (max-width: 568px) {
-  /* line 36, ../sass/sl-components/_header.scss */
+  /* line 37, ../sass/sl-components/_header.scss */
   .header__site-link span {
     font-size: 20.8px;
   }
 }
 @media (min-width: 660px) {
-  /* line 36, ../sass/sl-components/_header.scss */
+  /* line 37, ../sass/sl-components/_header.scss */
   .header__site-link span {
     position: relative;
     top: 60px;
@@ -3901,7 +3896,7 @@ header.header .acronym {
 }
 
 @media (min-width: 769px) {
-  /* line 59, ../sass/sl-components/_header.scss */
+  /* line 60, ../sass/sl-components/_header.scss */
   .page {
     padding-top: 24px;
     padding-top: 1.5rem;
@@ -4049,12 +4044,6 @@ ul.nice-menu li.menuparent ul li.active-trail a {
   margin-right: 1rem;
   margin-bottom: 16px;
   margin-bottom: 1rem;
-}
-/* line 10, ../sass/library/_image.scss */
-.node-article .field-name-field-image img {
-  -moz-border-radius: 11px;
-  -webkit-border-radius: 11px;
-  border-radius: 11px;
 }
 
 /* CSS code for panel page one col two rows
@@ -4261,12 +4250,6 @@ h3 {
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-/* line 10, ../sass/library/_image.scss */
-.node-type-team .field-name-field-image img {
-  -moz-border-radius: 11px;
-  -webkit-border-radius: 11px;
-  border-radius: 11px;
-}
 /* line 24, ../sass/sl-components/_team-detail.scss */
 .node-type-team .ui-state-default {
   border: 1px solid #d1d1d1;
@@ -4324,7 +4307,14 @@ h3 {
 ** added by criscom
 ** /panel-two-two
 */
-/* line 7, ../sass/sl-components/_team-landing.scss */
+@media (min-width: 980px) {
+  /* line 10, ../sass/sl-components/_team-landing.scss */
+  #block-views-team-block-2 h2 {
+    width: 70%;
+  }
+}
+
+/* line 17, ../sass/sl-components/_team-landing.scss */
 .main-content .view-team {
   margin-top: 16px;
   margin-top: 1rem;
@@ -4340,12 +4330,12 @@ h3 {
   display: table;
   clear: both;
 }
-/* line 19, ../sass/sl-components/_team-landing.scss */
+/* line 29, ../sass/sl-components/_team-landing.scss */
 .main-content .view-team .field-name-title h2 {
   margin: 0 0 12px 0;
   margin: 0 0 .75rem 0;
 }
-/* line 25, ../sass/sl-components/_team-landing.scss */
+/* line 35, ../sass/sl-components/_team-landing.scss */
 .main-content .view-team .field-name-field-image {
   float: left;
   width: 25%;
@@ -4354,13 +4344,7 @@ h3 {
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-/* line 10, ../sass/library/_image.scss */
-.main-content .view-team .field-name-field-image img {
-  -moz-border-radius: 11px;
-  -webkit-border-radius: 11px;
-  border-radius: 11px;
-}
-/* line 29, ../sass/sl-components/_team-landing.scss */
+/* line 39, ../sass/sl-components/_team-landing.scss */
 .main-content .view-team .more-link {
   text-align: left;
 }

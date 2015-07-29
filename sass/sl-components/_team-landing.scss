@@ -4,6 +4,16 @@
 ** /panel-two-two
 */
 
+// Mitarbeiter Menu
+
+#block-views-team-block-2 {
+    h2 {
+        @include breakpoint($large){
+                width: 70%;
+            }
+    }
+}
+
 .main-content .view-team
 {
     margin-top: 16px;
