@@ -1,0 +1,66 @@
+/* CSS code for über uns detail page
+** PANEL page
+** added by criscom
+** /panel-two-two
+*/
+
+.center-wrapper.one
+{
+    @include clearfix;
+    h2
+    {
+        margin-top: 0;
+        &:hover
+        {
+            color: $brand-primary;
+        }
+    }
+    .panel-panel
+    {
+        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
+
+        @extend %base-background;
+           @include breakpoint($iphone5-6)
+            {
+                width: 100%;
+                float: none;
+            }
+        .group-left
+        {
+            width: 30%;
+            margin-right: 2%;
+        }
+        .group-right
+        {
+            width: 68%;
+
+
+        }
+    }
+}
+
+.center-wrapper.two
+{
+    .panel-col-first
+    {
+        width: 68%;
+
+        @extend %base-background;
+        @include breakpoint($iphone5-6)
+        {
+            width: 100%;
+        }
+    }
+    .panel-col-last
+    {
+        width: 30%;
+        margin-left: 2%;
+
+        @extend %base-background;
+        @include breakpoint($iphone5-6)
+        {
+            width: 100%;
+        }
+    }
+}
