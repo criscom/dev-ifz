@@ -36,23 +36,28 @@ header.header
     }
     span
     {
+        display: block;
         font-size: $h1-font-size;
+        padding-left: 16px;
+        padding-left: 1rem;
+
+        // font-family: $opensans;
+
+        @extend %medium-font-weight;
+        @include breakpoint($min660){
+            position: relative;
+            top: 60px;
+            top: 3.75rem;
+        }
         @include breakpoint($max659) {
             font-size: 0.8 * $h1-font-size;
         }
         @include breakpoint($range481-568) {
             font-size: 0.65 * $h1-font-size;
         }
-        padding-left: 16px;
-        padding-left: 1rem;
-        // font-family: $opensans;
-
-        @extend %medium-font-weight;
-        @include breakpoint($min660){
-                position: relative;
-                top: 60px;
-                top: 3.75rem;
-            }
+        @include breakpoint($range0-480) {
+            // font-size: 0.5 * $h1-font-size; // too small
+        }
     }
 }
 

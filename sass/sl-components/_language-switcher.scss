@@ -3,8 +3,28 @@
 ** on all pages
 */
 
+//
+
+@include breakpoint($desktop){
+    .region-navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+// language links inline
+.language-switcher-locale-url {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-start;
+    padding-left: 0;
+    margin: 4px 0 0;
+}
 .locale-untranslated {
-    color: white;
+    color: $gray;
 }
 
 ul.language-switcher-locale-url
@@ -12,43 +32,45 @@ ul.language-switcher-locale-url
     @include no-bullets;
     li
     {
-        display: inline;
+        // display: inline;
         &.first:after
         {
             content: ' | ';
-
-            color: white;
+        }
+        &.last {
+            padding-left: 4px;
         }
         a
         {
             text-decoration: none;
-
-            color: white;
-
             @extend %base-font-size;
             @extend %medium-font-weight;
-            @include link-colors($normal: white, $hover: $red, $active: $red);
+            @include link-colors($normal: $black, $hover: $header-color !important);
+        }
+        a.active {
+            @include link-colors($normal: $header-color !important);
         }
     }
 }
 
 .block-locale
 {
-    float: right;
-
     @include breakpoint($max768)
     {
-        background-color: $black;
+        position: relative;
+
         ul.language-switcher-locale-url
         {
-            margin: 0;
-            padding: 8px 4px;
-            padding: .5rem .25rem;
+            position: absolute;
+            top: 16px;
+            right: 0;
+
+            // extend .box
+            background-color: rgb(229,229,229);
+            border: 1px solid rgb(209,209,209);
+            @include text-shadow(rgb(249,249,249) 0 1px 0);
+            padding: 12px 12px 12px 12px;
+            @include border-radius(11px);
         }
-    }
-    @include breakpoint($desktop) {
-        position: absolute;
-        top: 100px;
-        right: 0;
     }
 }
